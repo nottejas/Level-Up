@@ -8,6 +8,8 @@
 
 A productivity task management application designed for a 21-day challenge. Track your tasks, earn points for completing them, and visually monitor your progress through a 21-day journey with day-by-day tracking.
 
+> **Security Notice:** If you've cloned this repository before June 2023, please note that MongoDB credentials were previously exposed in the codebase. These credentials have been rotated and removed. Please use environment variables as described in the installation section.
+
 ![App Screenshot](screenshot.png)
 
 ## Features
