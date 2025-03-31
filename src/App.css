@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+body {
+  background-color: #121212;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f5f5f5;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+/* Orange flame colors */
+.orange-flame {
+  color: #FF6B35;
+}
+
+.orange-flame-bg {
+  background-color: #FF6B35;
+}
+
+.orange-flame-border {
+  border-color: #FF6B35;
+}
+
+.orange-flame-hover:hover {
+  background-color: #FF8C5A;
+}
+
+.dark-bg {
+  background-color: #1E1E1E;
+}
+
+.darker-bg {
+  background-color: #121212;
+}
+
+/* Progress bar styles */
+.day-progress-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.day-progress-bar {
+  height: 0.375rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: #374151;
+  width: 100%;
+}
+
+.day-progress-indicator {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Animation for the progress bar */
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+}
+
+.progress-bar-animate {
+  animation: progress 1s ease-out;
+}
+
+/* Two-column layout */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .day-progress-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
